@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>แบบฟอมร์มสมัครงาน</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1 align="center">แบบฟอมร์มสมัครเรียน</h1>
+    <form name="resume" method="post" action="">
+        <fieldset>
+        <legend>
+            <font color="blue">ข้อมูลส่วนตัว</font>
+        </legend>
+        คำนำหน้าชื่อ :
+        <input type="radio" name="prename" value="1">นาย
+        <input type="radio" name="prename" value="2">นาง
+        <input type="radio" name="prename" value="3">นางสาว
+        <br>ชื่อ :<input type="text" name="name" size="20">
+        <br>นามสกุล :<input type="text" name="name" size="20">
+        <br>เลขที่บัตรประชาชน<input type="text" name="id" size="13">
+        <br>ศาสนา :<select name="region">
+            <option value="reg0">เลือก</option>
+            <option value="reg1">พุทธ</option>
+            <option value="reg2">คริสต์</option>
+            <option value="reg3">อิสลาม</option>
+            <option value="reg4">อื่นๆ</option>
+        </select>
+        <br>วัน/เดือน/ปีเกิด<input type="date" name="birthday">
+        </fieldset><br>
+        <fieldset>
+            <legend>
+                <font color="blue">ที่อยู่ปัจจุบัน</font>
+            </legend>
+            บ้านเลขที่ : <input type="text" size="10">
+            หมู่ที่ : <input type="text" size="3">
+            อาคาร : <input type="text" size="20">
+            หมู่บ้าน : <input type="text" size="15">
+            ถนน : <input type="text" size="25">
+            แขวง/ตำบล : <input type="text" size="20">
+            เขต/อำเภอ: <input type="text" size="15">
+            จังหวัด : <input type="text" size="20">
+            รหัสไปรษณีย์ : <input type="text" size="5">
+            โทรศัพท์ : <input type="text" size="15">
+        </fieldset><br>
+        <fieldset>
+            <legend>
+                <font color="blue">ความรู้ด้านภาษาต่างประเทศ</font>
+            </legend>
+            <input type="checkbox" name="LNG" value="EN"> อังกฤษ
+            <input type="checkbox" name="LNG" value="FR"> ฝรั่งเศส
+            <input type="checkbox" name="LNG" value="CH"> จีน
+            <input type="checkbox" name="LNG" value="JA"> ญี่ปุ่น
+        </fieldset>
+        <br> &nbspรูปผู้สมัคร (JPG ขนาดไม่เกิน 100 KB) : <input type="file">
+        <p align="center">
+            <font color="red"><input type="radio" name="note" value="1"> โดยใบสมัครนี้ข้าพเจ้าขอรับรองว่า ข้อมูลที่กรอกเป็นความจริงทุกประการหากมีการกล่าวเท็จในใบสมัครนี้ </font>
+        </p>
+        <center><input type="submit" value="ส่งใบสมัคร"> &nbsp &nbsp
+            <input type="reset" value="ล้างข้อมูล"></center>
+    </form>    
+</body>
+
+</html>
